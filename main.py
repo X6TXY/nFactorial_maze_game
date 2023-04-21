@@ -132,6 +132,8 @@ text_font = pygame.font.SysFont('Impact', 40)
 text_font_1 = pygame.font.SysFont('Impact', 35)
 text_gm = pygame.font.SysFont('Verdana',100)
 
+
+#easy levels
 def easy_1(TILE,time):
     pygame.display.set_caption('Easy level 1')
     RES = WIDTH, HEIGHT = 700, 500
@@ -1432,7 +1434,7 @@ def med_3(TILE,time):
         pygame.display.flip()
         clock.tick(FPS)
 
-
+#hard levels
 def hard_1(TILE,time):
     pygame.display.set_caption('Hard level 1')
     RES = WIDTH, HEIGHT = 700, 500
@@ -2081,7 +2083,7 @@ def hard_3(TILE,time):
         pygame.display.flip()
         clock.tick(FPS)
 
-
+#main menu function
 def welcome():
     icon = pygame.image.load('images/icon.png')
     pygame.display.set_icon(icon)
@@ -2111,6 +2113,7 @@ def welcome():
         pygame.display.update()
         clock.tick(FPS)
 
+#leaderboard function
 def leaders():
     exit_game = False
     lead = pygame.image.load('images/lead.png')
@@ -2145,6 +2148,7 @@ def leaders():
         pygame.display.update()
         clock.tick(FPS)
 
+#game over page
 def game_over():
     icon = pygame.image.load('images/icon.png')
     pygame.display.set_icon(icon)
