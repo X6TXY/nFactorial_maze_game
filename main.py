@@ -14,10 +14,10 @@ clock = pygame.time.Clock()
 pygame.time.set_timer(pygame.USEREVENT, 1000)
 
 # images
-bg_game = pygame.image.load('images/bg_1.jpeg').convert()
-bg = pygame.image.load('images/bg_main.png').convert()
-bg_intro = pygame.image.load('images/intro.jpeg')
-icon = pygame.image.load('images/icon.png')
+bg_game = pygame.image.load('bg_1.jpeg').convert()
+bg = pygame.image.load('bg_main.png').convert()
+bg_intro = pygame.image.load('intro.jpeg')
+icon = pygame.image.load('icon.png')
 pygame.display.set_icon(icon)
 pygame.display.set_caption('Maze game')
 pygame.init()
@@ -143,10 +143,10 @@ def easy_1(TILE,time):
     surface = pygame.display.set_mode((WIDTH + 300, HEIGHT))
     clock = pygame.time.Clock()
     # images
-    bg_game = pygame.image.load('images/bg_1.jpeg').convert()
-    bg = pygame.image.load('images/bg_main.png').convert()
-    bg_intro = pygame.image.load('images/intro.jpeg')
-    icon = pygame.image.load('images/icon.png')
+    bg_game = pygame.image.load('bg_1.jpeg').convert()
+    bg = pygame.image.load('bg_main.png').convert()
+    bg_intro = pygame.image.load('intro.jpeg')
+    icon = pygame.image.load('icon.png')
     pygame.display.set_icon(icon)
     pygame.init()
     class Cell:
@@ -231,13 +231,13 @@ def easy_1(TILE,time):
                 current_cell = array.pop()
         return grid_cells
     
-    game_play = pygame.mixer.music.load('music/intro.mp3')
+    game_play = pygame.mixer.music.load('intro.mp3')
     pygame.mixer.music.play(-1)
     pygame.mixer.music.set_volume(0.1)
     score = 0
     class Food:
         def __init__(self):
-            self.img = pygame.image.load('images/food.png').convert_alpha()
+            self.img = pygame.image.load('food.png').convert_alpha()
             self.img = pygame.transform.scale(self.img, (TILE - 10, TILE - 10))
             self.rect = self.img.get_rect()
             self.set_pos()
@@ -284,7 +284,7 @@ def easy_1(TILE,time):
     maze = generate_maze()
     # player settings
     player_speed = 5
-    player_img = pygame.image.load('images/player2.png').convert_alpha()
+    player_img = pygame.image.load('player2.png').convert_alpha()
     player_img = pygame.transform.scale(player_img, (TILE - 2 * maze[0].thickness, TILE - 2 * maze[0].thickness))
     player_rect = player_img.get_rect()
     player_rect.center = TILE // 2, TILE // 2
@@ -364,10 +364,10 @@ def easy_2():
     surface = pygame.display.set_mode((WIDTH + 300, HEIGHT))
     clock = pygame.time.Clock()
     # images
-    bg_game = pygame.image.load('images/bg_1.jpeg').convert()
-    bg = pygame.image.load('images/bg_main.png').convert()
-    bg_intro = pygame.image.load('images/intro.jpeg')
-    icon = pygame.image.load('images/icon.png')
+    bg_game = pygame.image.load('bg_1.jpeg').convert()
+    bg = pygame.image.load('bg_main.png').convert()
+    bg_intro = pygame.image.load('intro.jpeg')
+    icon = pygame.image.load('icon.png')
     pygame.display.set_icon(icon)
     pygame.init()
     class Cell:
@@ -452,13 +452,13 @@ def easy_2():
                 current_cell = array.pop()
         return grid_cells
     
-    game_play = pygame.mixer.music.load('music/intro.mp3')
+    game_play = pygame.mixer.music.load('intro.mp3')
     pygame.mixer.music.play(-1)
     pygame.mixer.music.set_volume(0.1)
     score = 0
     class Food:
         def __init__(self):
-            self.img = pygame.image.load('images/food.png').convert_alpha()
+            self.img = pygame.image.load('food.png').convert_alpha()
             self.img = pygame.transform.scale(self.img, (TILE - 10, TILE - 10))
             self.rect = self.img.get_rect()
             self.set_pos()
@@ -504,7 +504,7 @@ def easy_2():
     maze = generate_maze()
     # player settings
     player_speed = 5
-    player_img = pygame.image.load('images/player2.png').convert_alpha()
+    player_img = pygame.image.load('player2.png').convert_alpha()
     player_img = pygame.transform.scale(player_img, (TILE - 2 * maze[0].thickness, TILE - 2 * maze[0].thickness))
     player_rect = player_img.get_rect()
     player_rect.center = TILE // 2, TILE // 2
@@ -582,10 +582,10 @@ def easy_3(TILE,time):
     surface = pygame.display.set_mode((WIDTH + 300, HEIGHT))
     clock = pygame.time.Clock()
     # images
-    bg_game = pygame.image.load('images/bg_1.jpeg').convert()
-    bg = pygame.image.load('images/bg_main.png').convert()
-    bg_intro = pygame.image.load('images/intro.jpeg')
-    icon = pygame.image.load('images/icon.png')
+    bg_game = pygame.image.load('bg_1.jpeg').convert()
+    bg = pygame.image.load('bg_main.png').convert()
+    bg_intro = pygame.image.load('intro.jpeg')
+    icon = pygame.image.load('icon.png')
     pygame.display.set_icon(icon)
     pygame.init()
     class Cell:
@@ -670,13 +670,13 @@ def easy_3(TILE,time):
                 current_cell = array.pop()
         return grid_cells
     
-    game_play = pygame.mixer.music.load('music/intro.mp3')
+    game_play = pygame.mixer.music.load('intro.mp3')
     pygame.mixer.music.play(-1)
     pygame.mixer.music.set_volume(0.1)
     score = 0
     class Food:
         def __init__(self):
-            self.img = pygame.image.load('images/food.png').convert_alpha()
+            self.img = pygame.image.load('food.png').convert_alpha()
             self.img = pygame.transform.scale(self.img, (TILE - 10, TILE - 10))
             self.rect = self.img.get_rect()
             self.set_pos()
@@ -722,7 +722,7 @@ def easy_3(TILE,time):
     maze = generate_maze()
     # player settings
     player_speed = 5
-    player_img = pygame.image.load('images/player2.png').convert_alpha()
+    player_img = pygame.image.load('player2.png').convert_alpha()
     player_img = pygame.transform.scale(player_img, (TILE - 2 * maze[0].thickness, TILE - 2 * maze[0].thickness))
     player_rect = player_img.get_rect()
     player_rect.center = TILE // 2, TILE // 2
@@ -801,10 +801,10 @@ def med_1(TILE,time):
     surface = pygame.display.set_mode((WIDTH + 300, HEIGHT))
     clock = pygame.time.Clock()
     # images
-    bg_game = pygame.image.load('images/bg_1.jpeg').convert()
-    bg = pygame.image.load('images/bg_main.png').convert()
-    bg_intro = pygame.image.load('images/intro.jpeg')
-    icon = pygame.image.load('images/icon.png')
+    bg_game = pygame.image.load('bg_1.jpeg').convert()
+    bg = pygame.image.load('bg_main.png').convert()
+    bg_intro = pygame.image.load('intro.jpeg')
+    icon = pygame.image.load('icon.png')
     pygame.display.set_icon(icon)
     
     pygame.init()
@@ -890,13 +890,13 @@ def med_1(TILE,time):
                 current_cell = array.pop()
         return grid_cells
     
-    game_play = pygame.mixer.music.load('music/intro.mp3')
+    game_play = pygame.mixer.music.load('intro.mp3')
     pygame.mixer.music.play(-1)
     pygame.mixer.music.set_volume(0.1)
     score = 0
     class Food:
         def __init__(self):
-            self.img = pygame.image.load('images/food.png').convert_alpha()
+            self.img = pygame.image.load('food.png').convert_alpha()
             self.img = pygame.transform.scale(self.img, (TILE - 10, TILE - 10))
             self.rect = self.img.get_rect()
             self.set_pos()
@@ -942,7 +942,7 @@ def med_1(TILE,time):
     maze = generate_maze()
     # player settings
     player_speed = 5
-    player_img = pygame.image.load('images/player2.png').convert_alpha()
+    player_img = pygame.image.load('player2.png').convert_alpha()
     player_img = pygame.transform.scale(player_img, (TILE - 2 * maze[0].thickness, TILE - 2 * maze[0].thickness))
     player_rect = player_img.get_rect()
     player_rect.center = TILE // 2, TILE // 2
@@ -1020,10 +1020,10 @@ def med_2(TILE,time):
     surface = pygame.display.set_mode((WIDTH + 300, HEIGHT))
     clock = pygame.time.Clock()
     # images
-    bg_game = pygame.image.load('images/bg_1.jpeg').convert()
-    bg = pygame.image.load('images/bg_main.png').convert()
-    bg_intro = pygame.image.load('images/intro.jpeg')
-    icon = pygame.image.load('images/icon.png')
+    bg_game = pygame.image.load('bg_1.jpeg').convert()
+    bg = pygame.image.load('bg_main.png').convert()
+    bg_intro = pygame.image.load('intro.jpeg')
+    icon = pygame.image.load('icon.png')
     pygame.display.set_icon(icon)
     
     pygame.init()
@@ -1109,13 +1109,13 @@ def med_2(TILE,time):
                 current_cell = array.pop()
         return grid_cells
     
-    game_play = pygame.mixer.music.load('music/intro.mp3')
+    game_play = pygame.mixer.music.load('intro.mp3')
     pygame.mixer.music.play(-1)
     pygame.mixer.music.set_volume(0.1)
     score = 0
     class Food:
         def __init__(self):
-            self.img = pygame.image.load('images/food.png').convert_alpha()
+            self.img = pygame.image.load('food.png').convert_alpha()
             self.img = pygame.transform.scale(self.img, (TILE - 10, TILE - 10))
             self.rect = self.img.get_rect()
             self.set_pos()
@@ -1161,7 +1161,7 @@ def med_2(TILE,time):
     maze = generate_maze()
     # player settings
     player_speed = 5
-    player_img = pygame.image.load('images/player2.png').convert_alpha()
+    player_img = pygame.image.load('player2.png').convert_alpha()
     player_img = pygame.transform.scale(player_img, (TILE - 2 * maze[0].thickness, TILE - 2 * maze[0].thickness))
     player_rect = player_img.get_rect()
     player_rect.center = TILE // 2, TILE // 2
@@ -1239,10 +1239,10 @@ def med_3(TILE,time):
     surface = pygame.display.set_mode((WIDTH + 300, HEIGHT))
     clock = pygame.time.Clock()
     # images
-    bg_game = pygame.image.load('images/bg_1.jpeg').convert()
-    bg = pygame.image.load('images/bg_main.png').convert()
-    bg_intro = pygame.image.load('images/intro.jpeg')
-    icon = pygame.image.load('images/icon.png')
+    bg_game = pygame.image.load('bg_1.jpeg').convert()
+    bg = pygame.image.load('bg_main.png').convert()
+    bg_intro = pygame.image.load('intro.jpeg')
+    icon = pygame.image.load('icon.png')
     pygame.display.set_icon(icon)
     
     pygame.init()
@@ -1328,13 +1328,13 @@ def med_3(TILE,time):
                 current_cell = array.pop()
         return grid_cells
     
-    game_play = pygame.mixer.music.load('music/intro.mp3')
+    game_play = pygame.mixer.music.load('intro.mp3')
     pygame.mixer.music.play(-1)
     pygame.mixer.music.set_volume(0.1)
     score = 0
     class Food:
         def __init__(self):
-            self.img = pygame.image.load('images/food.png').convert_alpha()
+            self.img = pygame.image.load('food.png').convert_alpha()
             self.img = pygame.transform.scale(self.img, (TILE - 10, TILE - 10))
             self.rect = self.img.get_rect()
             self.set_pos()
@@ -1380,7 +1380,7 @@ def med_3(TILE,time):
     maze = generate_maze()
     # player settings
     player_speed = 5
-    player_img = pygame.image.load('images/player2.png').convert_alpha()
+    player_img = pygame.image.load('player2.png').convert_alpha()
     player_img = pygame.transform.scale(player_img, (TILE - 2 * maze[0].thickness, TILE - 2 * maze[0].thickness))
     player_rect = player_img.get_rect()
     player_rect.center = TILE // 2, TILE // 2
@@ -1459,10 +1459,10 @@ def hard_1(TILE,time):
     surface = pygame.display.set_mode((WIDTH + 300, HEIGHT))
     clock = pygame.time.Clock()
     # images
-    bg_game = pygame.image.load('images/bg_1.jpeg').convert()
-    bg = pygame.image.load('images/bg_main.png').convert()
-    bg_intro = pygame.image.load('images/intro.jpeg')
-    icon = pygame.image.load('images/icon.png')
+    bg_game = pygame.image.load('bg_1.jpeg').convert()
+    bg = pygame.image.load('bg_main.png').convert()
+    bg_intro = pygame.image.load('intro.jpeg')
+    icon = pygame.image.load('icon.png')
     pygame.display.set_icon(icon)
     pygame.init()
     class Cell:
@@ -1547,13 +1547,13 @@ def hard_1(TILE,time):
                 current_cell = array.pop()
         return grid_cells
     
-    game_play = pygame.mixer.music.load('music/intro.mp3')
+    game_play = pygame.mixer.music.load('intro.mp3')
     pygame.mixer.music.play(-1)
     pygame.mixer.music.set_volume(0.1)
     score = 0
     class Food:
         def __init__(self):
-            self.img = pygame.image.load('images/food.png').convert_alpha()
+            self.img = pygame.image.load('food.png').convert_alpha()
             self.img = pygame.transform.scale(self.img, (TILE - 10, TILE - 10))
             self.rect = self.img.get_rect()
             self.set_pos()
@@ -1599,7 +1599,7 @@ def hard_1(TILE,time):
     maze = generate_maze()
     # player settings
     player_speed = 5
-    player_img = pygame.image.load('images/player2.png').convert_alpha()
+    player_img = pygame.image.load('player2.png').convert_alpha()
     player_img = pygame.transform.scale(player_img, (TILE - 2 * maze[0].thickness, TILE - 2 * maze[0].thickness))
     player_rect = player_img.get_rect()
     player_rect.center = TILE // 2, TILE // 2
@@ -1677,10 +1677,10 @@ def hard_2(TILE,time):
     surface = pygame.display.set_mode((WIDTH + 300, HEIGHT))
     clock = pygame.time.Clock()
     # images
-    bg_game = pygame.image.load('images/bg_1.jpeg').convert()
-    bg = pygame.image.load('images/bg_main.png').convert()
-    bg_intro = pygame.image.load('images/intro.jpeg')
-    icon = pygame.image.load('images/icon.png')
+    bg_game = pygame.image.load('bg_1.jpeg').convert()
+    bg = pygame.image.load('bg_main.png').convert()
+    bg_intro = pygame.image.load('intro.jpeg')
+    icon = pygame.image.load('icon.png')
     pygame.display.set_icon(icon)
     pygame.init()
     class Cell:
@@ -1765,13 +1765,13 @@ def hard_2(TILE,time):
                 current_cell = array.pop()
         return grid_cells
     
-    game_play = pygame.mixer.music.load('music/intro.mp3')
+    game_play = pygame.mixer.music.load('intro.mp3')
     pygame.mixer.music.play(-1)
     pygame.mixer.music.set_volume(0.1)
     score = 0
     class Food:
         def __init__(self):
-            self.img = pygame.image.load('images/food.png').convert_alpha()
+            self.img = pygame.image.load('food.png').convert_alpha()
             self.img = pygame.transform.scale(self.img, (TILE - 10, TILE - 10))
             self.rect = self.img.get_rect()
             self.set_pos()
@@ -1817,7 +1817,7 @@ def hard_2(TILE,time):
     maze = generate_maze()
     # player settings
     player_speed = 5
-    player_img = pygame.image.load('images/player2.png').convert_alpha()
+    player_img = pygame.image.load('player2.png').convert_alpha()
     player_img = pygame.transform.scale(player_img, (TILE - 2 * maze[0].thickness, TILE - 2 * maze[0].thickness))
     player_rect = player_img.get_rect()
     player_rect.center = TILE // 2, TILE // 2
@@ -1895,10 +1895,10 @@ def hard_3(TILE,time):
     surface = pygame.display.set_mode((WIDTH + 300, HEIGHT))
     clock = pygame.time.Clock()
     # images
-    bg_game = pygame.image.load('images/bg_1.jpeg').convert()
-    bg = pygame.image.load('images/bg_main.png').convert()
-    bg_intro = pygame.image.load('images/intro.jpeg')
-    icon = pygame.image.load('images/icon.png')
+    bg_game = pygame.image.load('bg_1.jpeg').convert()
+    bg = pygame.image.load('bg_main.png').convert()
+    bg_intro = pygame.image.load('intro.jpeg')
+    icon = pygame.image.load('icon.png')
     pygame.display.set_icon(icon)
     pygame.init()
     class Cell:
@@ -1983,13 +1983,13 @@ def hard_3(TILE,time):
                 current_cell = array.pop()
         return grid_cells
     
-    game_play = pygame.mixer.music.load('music/intro.mp3')
+    game_play = pygame.mixer.music.load('intro.mp3')
     pygame.mixer.music.play(-1)
     pygame.mixer.music.set_volume(0.1)
     score = 0
     class Food:
         def __init__(self):
-            self.img = pygame.image.load('images/food.png').convert_alpha()
+            self.img = pygame.image.load('food.png').convert_alpha()
             self.img = pygame.transform.scale(self.img, (TILE - 10, TILE - 10))
             self.rect = self.img.get_rect()
             self.set_pos()
@@ -2035,7 +2035,7 @@ def hard_3(TILE,time):
     maze = generate_maze()
     # player settings
     player_speed = 5
-    player_img = pygame.image.load('images/player2.png').convert_alpha()
+    player_img = pygame.image.load('player2.png').convert_alpha()
     player_img = pygame.transform.scale(player_img, (TILE - 2 * maze[0].thickness, TILE - 2 * maze[0].thickness))
     player_rect = player_img.get_rect()
     player_rect.center = TILE // 2, TILE // 2
@@ -2106,11 +2106,11 @@ def hard_3(TILE,time):
 
 #main menu function
 def welcome():
-    icon = pygame.image.load('images/icon.png')
+    icon = pygame.image.load('icon.png')
     pygame.display.set_icon(icon)
     pygame.display.set_caption('Main menu')
     exit_game = False
-    music_welcome = pygame.mixer.music.load('music/cat.mp3')
+    music_welcome = pygame.mixer.music.load('cat.mp3')
     pygame.mixer.music.play(-1)
     while not exit_game:
         surface.blit(bg_intro,(0,0))
@@ -2137,7 +2137,7 @@ def welcome():
 #leaderboard function
 def leaders():
     exit_game = False
-    lead = pygame.image.load('images/lead.png')
+    lead = pygame.image.load('lead.png')
     pygame.display.set_icon(lead)
     pygame.display.set_caption('leadership')
     while not exit_game:
@@ -2171,10 +2171,10 @@ def leaders():
 
 #game over page
 def game_over():
-    icon = pygame.image.load('images/icon.png')
+    icon = pygame.image.load('icon.png')
     pygame.display.set_icon(icon)
     pygame.display.set_caption('Game over')
-    gm_ovr = pygame.mixer.music.load('music/game_over.wav')
+    gm_ovr = pygame.mixer.music.load('game_over.wav')
     pygame.mixer.music.set_volume(0.1)
     pygame.mixer.music.play(-1)
     exit_game = False
