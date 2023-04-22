@@ -279,6 +279,7 @@ def easy_1(TILE,time):
             f.write(str(rec))
     FPS = 60
     
+
     # get maze
     maze = generate_maze()
     # player settings
@@ -312,7 +313,9 @@ def easy_1(TILE,time):
                 time -= 1
             if score == 1:
                 set_record(record,time)
-                easy_2(100,20)
+                if time >int(record):
+                    print("New record")
+                easy_2()
             if time == 0:
                 set_record(record,time)
                 game_over()
@@ -350,7 +353,9 @@ def easy_1(TILE,time):
         pygame.display.flip()
         clock.tick(FPS)
 
-def easy_2(TILE,time):
+def easy_2():
+    TILE = 100
+    time = 20
     pygame.display.set_caption('Easy level 2')
     RES = WIDTH, HEIGHT = 700, 500
     cols, rows = WIDTH // TILE, HEIGHT // TILE
@@ -528,6 +533,8 @@ def easy_2(TILE,time):
                 time -= 1
             if score == 1:
                 set_record(record,time)
+                if time >int(record):
+                    print("New record")
                 easy_3(100,15)
             if time == 0:
                 set_record(record,time)
@@ -744,6 +751,8 @@ def easy_3(TILE,time):
                 time -= 1
             if score == 1:
                 set_record(record,time)
+                if time >int(record):
+                    print("New record")
                 game_over()
             if time == 0:
                 set_record(record,time)
@@ -962,6 +971,8 @@ def med_1(TILE,time):
                 time -= 1
             if score == 1:
                 set_record(record,time)
+                if time >int(record):
+                    print("New record")
                 med_2(TILE,25)
             if time == 0:
                 set_record(record,time)
@@ -1179,6 +1190,8 @@ def med_2(TILE,time):
                 time -= 1
             if score == 1:
                 set_record(record,time)
+                if time >int(record):
+                    print("New record")
                 med_3(TILE,20)
             if time == 0:
                 set_record(record,time)
@@ -1396,6 +1409,8 @@ def med_3(TILE,time):
                 time -= 1
             if score == 1:
                 set_record(record,time)
+                if time >int(record):
+                    print("New record")
                 game_over()
             if time == 0:
                 set_record(record,time)
@@ -1613,6 +1628,8 @@ def hard_1(TILE,time):
                 time -= 1
             if score == 1:
                 set_record(record,time)
+                if time >int(record):
+                    print("New record")
                 hard_2(30,35)
             if time == 0:
                 set_record(record,time)
@@ -1829,6 +1846,8 @@ def hard_2(TILE,time):
                 time -= 1
             if score == 1:
                 set_record(record,time)
+                if time >int(record):
+                    print("New record")
                 hard_3(30,25)
             if time == 0:
                 set_record(record,time)
@@ -2045,6 +2064,8 @@ def hard_3(TILE,time):
                 time -= 1
             if score == 1:
                 set_record(record,time)
+                if time >int(record):
+                    print("New record")
                 game_over()
             if time == 0:
                 set_record(record,time)
